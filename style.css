@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  --primary-light: hsl(193, 38%, 86%);
+  --primary-green: hsl(150, 100%, 66%);
+  --neutral-blue: hsl(217, 19%, 38%);
+  --neutral-gray: hsl(217, 19%, 24%);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: var(--neutral-gray);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.main__box {
+  background-color: var(--neutral-blue);
+  width: 30rem;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem 1rem 4rem;
+  color: var(--primary-green);
+  letter-spacing: 2px;
+  position: relative;
+  margin: 1rem;
+}
+#content.loading {
+  display: none;
+}
+.main__box > div > p:last-of-type {
+  font-size: 1.75rem;
+  padding: 0 1rem;
+  color: var(--primary-light);
+  letter-spacing: normal;
+}
+.main__footer {
+  display: flex;
+}
+.main__footer > img {
+  width: 3.75rem;
+  object-fit: cover;
+}
+.main__footer > hr {
+  width: 100%;
+}
+.styled__button {
+  position: absolute;
+  bottom: -1.8rem;
+  transform: translate(-50%, 0);
+  padding: 1rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--primary-green);
+  cursor: pointer;
+}
+.styled__button:hover {
+  -moz-box-shadow: 0px 0px 40px 3px var(--primary-green);
+  -webkit-box-shadow: 0px 0px 40px 3px var(--primary-green);
+  box-shadow: 0px 0px 40px 3px var(--primary-green);
+}
+.styled__button:active {
+  -moz-box-shadow: 0px 0px 40px 3px var(--primary-green);
+  -webkit-box-shadow: 0px 0px 40px 3px var(--primary-green);
+  box-shadow: 0px 0px 40px 3px var(--primary-green);
+}
+.styled__button > img {
+  vertical-align: middle;
+}
+
+/* @media screen and (min-width: 375px) {
+  .main__box {
+    margin: 1rem;
+  }
+} */
