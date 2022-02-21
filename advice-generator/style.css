@@ -40,7 +40,7 @@ body {
 #content.loading {
   display: none;
 }
-.main__box > div > p:last-of-type {
+.main__box > main > p:last-of-type {
   font-size: 1.75rem;
   padding: 0 1rem;
   color: var(--primary-light);

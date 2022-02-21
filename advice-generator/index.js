@@ -1,6 +1,6 @@
 const fetchButton = document.getElementById('btn-action');
 
-fetchButton.addEventListener('click', () => {
+function fetchAdvice() {
   fetch('https://api.adviceslip.com/advice', {
     method: 'GET',
   })
@@ -12,4 +12,12 @@ fetchButton.addEventListener('click', () => {
     .catch((error) => {
       console.log(error);
     });
-});
+}
+
+fetchButton.addEventListener('click', fetchAdvice);
+
+function hallo() {
+  console.log('running');
+}
+
+fetchAdvice();
