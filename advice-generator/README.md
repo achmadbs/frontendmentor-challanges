@@ -1,1 +1,1 @@
-# frontendmentor-challenges
+# advice-generator
